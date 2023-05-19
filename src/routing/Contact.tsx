@@ -1,13 +1,9 @@
-import { useNavigate } from 'react-router-dom';
-
-const ContactPage = () => {
-  const navigate = useNavigate();
-
+const Contact = () => {
   return (
     <form
       onSubmit={(event) => {
         event.preventDefault();
-        navigate('/');
+        // Redirect the user to the home page
       }}
     >
       <button className="btn btn-primary">Submit</button>
@@ -15,4 +11,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default Contact;
